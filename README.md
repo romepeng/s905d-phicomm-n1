@@ -21,7 +21,7 @@ https://gitlab.com/networkbase/s905d-phincomm-n1/-/raw/main/meson-gxl-s905d-phic
 以下是安装armbian 5.77到n1的具体步骤：
 ==========================================================
 
-1. 从https://yadi.sk/d/srrtn6kpnsKz2/Linux/ARMBIAN/5.77/S905下载由@150balbes编译好的镜像，我选的是debian/desktop版，您请随意。
+1. 从 https://yadi.sk/d/srrtn6kpnsKz2/Linux/ARMBIAN/5.77/S905 下载由@150balbes编译好的镜像，我选的是debian/desktop版，您请随意。
 
 2. 解压镜像并写入U盘，以linux系统为例：
        $ xzcat --keep Armbian_5.77_Aml-s905_Debian_stretch_default_5.0.2_desktop_20190318.img.xz | sudo dd of=/dev/sdX bs=1M && sync
