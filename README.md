@@ -68,15 +68,11 @@ https://gitlab.com/networkbase/s905d-phincomm-n1/-/raw/main/meson-gxl-s905d-phic
 联通外网:
      修改 / etc/network/interfaces，注释 hotplug 热插拔模式，换成 auto 即可：
 
-root@aml:~# cat /etc/network/interfaces
-
+cat /etc/network/interfaces
+out:
 source /etc/network/interfaces.d/*
 
-# Wired adapter #1
-
 auto eth0
-
-#allow-hotplug eth0
   
 在路由器上给 N1 分配静态 IP 的时候发现，armbian 的有线网卡每次重启后 MAC 地址都会变，解决方法也不复杂。
 
@@ -85,7 +81,6 @@ auto eth0
 root@aml:~# cat /etc/network/interfaces
 
 source /etc/network/interfaces.d/* 
-# Wired adapter #1  
 allow-hotplug eth0  
 no-auto-down eth0  
 iface eth0 inet dhcp  
